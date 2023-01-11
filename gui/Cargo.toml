@@ -1,0 +1,25 @@
+[package]
+name = "gui"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.66"
+egui = "0.20.1"
+egui_extras = "0.20.0"
+eframe = "0.20.1"
+
+# File Dialogs
+
+rfd = "0.10.0"
+
+fst = { path = "../fst" }
+
+# For Prusti verification
+# prusti-contracts = "0.1.2"
+
+log = "0.4.17"
+env_logger = "0.10.0"
+espalier = "0.4.1"
+
+crossbeam-channel = "0.5.6"

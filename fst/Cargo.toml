@@ -1,0 +1,36 @@
+[package]
+name = "fst"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+
+[dependencies]
+anyhow = { version = "1.0.66", features = ["backtrace"] }
+
+# LZ4 decompression
+lz4_flex = "0.9.3"
+# ZLib decompression
+flate2 = "1.0.25"
+# FastLZ decompression. May not be worth supporting this.
+fastlz = "0.1.0"
+
+byteorder = "1.4.3"
+
+# For Prusti verification
+# prusti-contracts = "0.1.2"
+
+num-traits = "0.2.15"
+num-derive = "0.3.3"
+
+
+typed-index-collections = "3.1.0"
+derive_more = "0.99.17"
+
+tinyvec = { version = "1.6.0", features = ["alloc", "rustc_1_55"] }
+log = "0.4.17"
+env_logger = "0.10.0"
+
+espalier = "0.4.1"
+
+crossbeam-channel = "0.5.6"
